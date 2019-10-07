@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="node_modules/systemjs/dist/system.js"></script>
+  <title>DECORATORS</title>
+</head>
+<body>
+  <h1 style="text-align: center;">DECORATORS</h1>
+  <script>
+    // set our baseURL reference path
+    SystemJS.config({
+      baseURL: '/',
+      packages: {
+        '/': {
+          defaultExtension: 'js'
+        }
+      }
+    });
+
+    // loads /js/main.js
+    SystemJS.import('app.js');
+  </script>
+</body>
+</html>
